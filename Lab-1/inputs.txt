@@ -1,0 +1,36 @@
+select distinct a, b.*,c
+from a,b,   c
+left join d on a.Id = b.Id
+where a.Id > 100
+group by a.empId
+having a.empName = "Akshit"
+order by a.empId asc, a.Id desc
+
+
+
+
+create table name (
+	colName char primary key,
+	empId int unique,
+	manager int not null,
+	salary int
+)
+
+
+insERT inTo table (colA, colB, colC)
+values (1,2,"kuch bhi likhdo")
+
+insERT inTo table 
+values (1,2,"kuch bhi likhdo")
+
+
+update name
+set Id = "val", Name="kuchbhi"
+where a = 1
+
+update name
+set Id = "val", Name="kuchbhi"
+
+delete from tableName where x = 1 and string = "bcd"
+
+drop tableName
